@@ -1,1 +1,1 @@
-# takarars
+Takara website.
