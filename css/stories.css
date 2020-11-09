@@ -1,0 +1,16 @@
+/* STORIES */
+
+.stories {
+  margin: 10em 0;
+}
+
+/* CARD */
+
+.img-responsive {
+  width: 100%;
+}
+
+.story-content {
+  height: 75px;
+  -webkit-line-clamp: 4;
+}

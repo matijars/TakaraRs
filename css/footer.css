@@ -1,0 +1,99 @@
+/* FOOTER */
+
+.footer {
+  padding: 30px 0;
+  background: #000;
+  position: absolute;
+  width: 100%;
+}
+
+.footer .footer-content img {
+  width: 12em;
+}
+
+.footer .footer-logo {
+  width: 11em;
+  display: inline-block;
+}
+
+#logo-takara {
+  margin-bottom: 1em;
+}
+
+.footer .footer-content .footer-middle {
+  color: #fff;
+  text-align: center;
+  font-size: 0.8em;
+  line-height: 0.3em;
+}
+
+.footer .footer-middle a {
+  text-decoration: none;
+  color: gray;
+}
+
+.footer .footer-middle a:hover {
+  color: #f58634;
+}
+
+.footer #distribution {
+  font-size: 1.4em;
+  padding-bottom: 0.4em;
+}
+
+.footer #gepe {
+  font-size: 2em;
+  padding-bottom: 0.4em;
+}
+
+.footer .footer-content .footer-right {
+  text-align: right;
+  color: #fff;
+}
+
+.footer-right p {
+  padding-top: 0.7em;
+}
+
+.footer .social-icons {
+  color: #fff;
+  font-size: 3em;
+  margin: 0 10px;
+  transition: 0.5s ease;
+}
+
+.footer .fa-facebook-f:hover {
+  color: #4167b2;
+}
+
+.footer .fa-instagram:hover {
+  color: #9a3698;
+}
+
+.footer .fa-youtube:hover {
+  color: #f72a00;
+}
+
+@media (max-width: 991px) {
+  .footer {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer .footer-content .footer-left {
+    text-align: center;
+    margin-bottom: 2em;
+  }
+  .footer .footer-content .footer-middle {
+    margin-bottom: 2em;
+  }
+  .footer .footer-content .footer-right {
+    text-align: center;
+  }
+
+  #logo-takara {
+    display: block;
+    margin: 0 auto 1em auto;
+  }
+}

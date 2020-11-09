@@ -1,0 +1,227 @@
+@import "css/all.css";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap");
+
+* {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1400px;
+}
+
+.accordion {
+  height: 80vh;
+  display: flex;
+  overflow: hidden;
+}
+.accordion__title {
+  margin-left: 5%;
+  position: absolute;
+  top: 50%;
+  transition: all 0.6s;
+  color: #fff;
+  z-index: 1;
+  font-weight: 800;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+.accordion__title:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  height: 5px;
+  width: 50px;
+  bottom: -10px;
+  left: 0px;
+  background: #fff;
+  transition: all 0.5s ease;
+  transition-delay: 0.2s;
+}
+.accordion__item {
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  transition: 0.6s cubic-bezier(0.69, 0.01, 0.25, 1);
+  background-color: black;
+  display: flex;
+}
+.accordion__item:hover,
+.accordion__item.is-active {
+  flex-grow: 1.2;
+}
+.accordion__item:hover .accordion__content,
+.accordion__item.is-active .accordion-content {
+  opacity: 1;
+}
+.accordion__item:hover .accordion__content .accordion__links,
+.accordion__item.is-active .accordion__content .accordion__links {
+  transform: translateY(0);
+  opacity: 1;
+}
+.accordion__item:hover .accordion__background {
+  filter: grayscale(0);
+  opacity: 0.7;
+}
+.accordion__item:hover .accordion__title {
+  top: 20%;
+}
+.accordion__item:hover .accordion__title::after {
+  background: #f58634;
+}
+.accordion__background {
+  filter: grayscale(1);
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.5s ease-in-out;
+  border-right: 1px solid #f58634;
+  border-left: 1px solid #f58634;
+}
+.accordion__content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  display: flex;
+  flex: 1;
+  opacity: 0;
+  transition: 0.3s ease;
+  justify-content: center;
+}
+.accordion__links {
+  transition: 0.6s cubic-bezier(0.69, 0.01, 0.25, 1);
+  transition-delay: 0.2s;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+  opacity: 0;
+  transform: translateY(70px);
+}
+.accordion__link {
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 700;
+  text-decoration: none !important;
+  color: #fff;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  transition: color 0.2s ease;
+}
+.accordion__link:hover {
+  color: #f58634;
+}
+
+@media (max-width: 992px) {
+  .accordion {
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .accordion__background {
+    background-position: center;
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid #f58634;
+    border-bottom: 1px solid #f58634;
+  }
+  .accordion__item:hover,
+  .accordion__item.is-active {
+    flex-grow: 3;
+  }
+  .accordion__item:hover .accordion__title {
+    top: 80%;
+  }
+}
+
+/* VIDEOS */
+
+.videos {
+  border-bottom: none;
+  min-height: calc(100vh - 60px);
+}
+
+.video {
+  margin-bottom: 2em;
+}
+
+.index-videos {
+  margin-top: -2em;
+  border-bottom: 3px solid #f58634;
+}
+
+/* GENERAL */
+
+.contact-h2 {
+  font-size: 2em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #f58634;
+  font-weight: 700;
+  margin-bottom: 1em;
+  position: relative;
+  margin-bottom: 1em;
+}
+
+.contact-h2 span {
+  font-size: 50px;
+  font-weight: 700;
+  opacity: 0.1;
+  top: -20px;
+  transform: translate(-50%, 0px);
+  left: 50%;
+  position: absolute;
+  width: 100%;
+}
+
+.primary-btn {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0 auto 0 auto;
+  padding: 0.5em 1em;
+  border: 1px solid #f58634;
+  color: #f58634;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: lowercase;
+  background: transparent;
+  transition: all 0.4s ease;
+}
+
+.primary-btn:hover,
+.primary-btn:focus {
+  background: #ffdbc2;
+  outline: none;
+}
+
+/* UNDER CONSTRUCTION */
+
+.uc img {
+  width: 400px;
+  height: 200px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cs img {
+  width: 300px;
+  height: 300px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -1,0 +1,120 @@
+#catalog-body {
+  background: url("/img/news/news_bg.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.contact-container {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 9em;
+}
+
+.about-container {
+  width: 100%;
+  height: 300px;
+  margin-right: 50px;
+}
+
+.form-container {
+  width: 100%;
+  height: 300px;
+}
+
+.contact-btn {
+  margin-top: 1em !important;
+}
+
+.form-control {
+  border: 1px solid #000;
+  margin-bottom: 1em;
+  transition: all 0.4s ease;
+  color: #000;
+}
+
+.form-control:hover {
+  background-color: #ffdbc2;
+}
+
+.form-control:focus {
+  background-color: #ffdbc2;
+  border: 1px solid #000;
+  box-shadow: none;
+}
+
+#message {
+  height: 150px;
+  resize: none;
+}
+
+.contact-info #gepe {
+  font-size: 2em;
+}
+
+.contact-info {
+  text-align: left;
+}
+
+.contact-info p {
+  line-height: 0.5;
+  font-weight: 600;
+}
+
+#contact-gepe {
+  font-size: 1.5em;
+  margin: 1em 0;
+  font-weight: 600;
+}
+
+.contact-info a {
+  color: #ff6a00;
+  text-decoration: none;
+}
+
+.about-us-text p {
+  font-size: 1.1em;
+}
+
+#moto {
+  font-weight: bold;
+}
+
+#contact-mail:hover {
+  border-bottom: 1px solid #000;
+}
+
+.contact-info .social-icons {
+  color: rgb(65, 64, 64);
+  font-size: 2em;
+  margin: 0.2em 0.5em 0 0;
+  transition: 0.5s ease;
+}
+
+.contact-info .fa-facebook-f:hover {
+  color: #4167b2;
+}
+
+.contact-info .fa-instagram:hover {
+  color: #9a3698;
+}
+
+.contact-info .fa-youtube:hover {
+  color: #f72a00;
+}
+
+@media only screen and (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-container {
+    height: auto;
+    margin-right: 0px;
+  }
+  .form-container {
+    margin-top: 2em;
+  }
+}

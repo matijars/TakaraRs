@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Takara - Contact</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Marcellus&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body id="catalog-body">
+    <!-- NAVIGATION -->
+
+    <div class="main-nav">
+      <div class="main-nav__container">
+        <img src="img/logo.png" class="main-nav__logo" alt="Logo" />
+        <ul class="main-nav__list">
+          <li><a href="index.html" class="main-nav__link">Home</a></li>
+          <li><a href="" class="main-nav__link">Pictures</a></li>
+          <li><a href="video.html" class="main-nav__link">Videos</a></li>
+          <li><a href="catalog.html" class="main-nav__link">Catalog</a></li>
+          <li><a href="contact.html" class="main-nav__link active-link-color">Contact</a></li>
+        </ul>
+        <div class="main-nav__toggler"><i class="fas fa-bars"></i></div>
+      </div>
+    </div>
+
+    <!-- ABOUT US-->
+    <div class="contact-container">
+      <div class="container">
+        <div class="about-container">
+          <h2 class="contact-h2">
+            About us
+            <span>About us</span>
+          </h2>
+          <div class="about-us-text">
+            <p>
+              Takara hooks are high quality fishing hooks made in Japan by skilled workers with long
+              experience. We use only premium materials to develop hooks which are ideal for all
+              types of water, style or fish. In our range you can find competition hooks, freshwater
+              hooks, jig, worm, treble and much more to satisfy Your needs.
+            </p>
+            <p>
+              Takara trademark guaranties that every hook has passed quality control and it will not
+              fail You. Our moto is "Takara - when quality is what You need". Takara lines and
+              accessories are made to satisfy fishermens need for quality line and accessories.
+              There is no point in having good hooks when the line is not as good...
+            </p>
+          </div>
+
+          <div class="contact-info">
+            <p id="contact-gepe">Distribution - GepeFishing</p>
+            <p><u>address:</u> Mladosti 17, 18000 Nis, Serbia</p>
+            <p><u>tel:</u> +38118580886 ; + 381638147859</p>
+            <p>
+              <u>e-mail:</u>
+              <a href="mailto:gepegroup@gmail.com" id="contact-mail"> gepegroup@gmail.com</a>
+            </p>
+            <a href="https://www.facebook.com/TakarahookSerbia"
+              ><i class="fab fa-facebook-f social-icons"></i
+            ></a>
+            <a href="https://www.instagram.com/takarahooks/"
+              ><i class="fab fa-instagram social-icons"></i
+            ></a>
+            <a href="https://www.youtube.com/channel/UCYNNmcgx6Qk6XFNPDaSC3cQ"
+              ><i class="fab fa-youtube social-icons"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- CONTACT FORM -->
+        <div class="form-container">
+          <h2 class="contact-h2">
+            Contact
+            <span>Contact</span>
+          </h2>
+
+          <!-- Name -->
+          <form action="contact.php" method="post">
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              name="visitor_name"
+              placeholder="Name"
+              pattern="[A-Z\sa-z]{3,20}"
+              required
+            />
+
+            <!-- Email -->
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="visitor_email"
+              placeholder="Email address"
+            />
+
+            <!-- Text -->
+            <textarea
+              name="visitor_message"
+              class="form-control"
+              id="message"
+              placeholder="Your message"
+              required
+            ></textarea>
+            <input type="submit" value="Send Message" class="primary-btn contact-btn" required />
+          </form>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="main.js"></script>
+  </body>
+</html>
