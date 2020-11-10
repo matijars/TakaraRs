@@ -1,7 +1,7 @@
-var modalBg = document.getElementsByClassName("news-modal");
-var modal = document.getElementsByClassName("news-modal-box");
-var openBtn = document.getElementsByClassName("news-item");
-var closeBtn = document.getElementsByClassName("modal-close");
+let modalBg = document.getElementsByClassName("news-modal");
+let modal = document.getElementsByClassName("news-modal-box");
+let openBtn = document.getElementsByClassName("news-item");
+let closeBtn = document.getElementsByClassName("modal-close");
 
 // Navigation
 
@@ -13,6 +13,16 @@ $(".main-nav__toggler").click(function () {
 $(".sub-nav__toggler").click(function () {
   $(this).toggleClass("active-toggler");
   $(".sub-nav").toggleClass("sub-menu-active");
+});
+
+$(window).resize(function () {
+  if ($(window).width() >= 769) {
+    $(".main-nav__toggler").removeClass("active-toggler");
+    $(".main-nav__list").removeClass("main-menu-active");
+
+    $(".sub-nav").removeClass("sub-menu-active");
+    $(".sub-nav__toggler").removeClass("active-toggler");
+  }
 });
 
 // Open modal
