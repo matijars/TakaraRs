@@ -27,7 +27,7 @@
   font-weight: 800;
   font-size: 24px;
   text-transform: uppercase;
-  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000;
 }
 .accordion__title:after {
   content: " ";
@@ -70,7 +70,7 @@
   top: 20%;
 }
 .accordion__item:hover .accordion__title::after {
-  background: #f58634;
+  background: var(--main-orange-color);
 }
 .accordion__background {
   filter: grayscale(1);
@@ -83,8 +83,8 @@
   background-position: center;
   background-repeat: no-repeat;
   transition: 0.5s ease-in-out;
-  border-right: 1px solid #f58634;
-  border-left: 1px solid #f58634;
+  border-right: 1px solid var(--main-orange-color);
+  border-left: 1px solid var(--main-orange-color);
 }
 .accordion__content {
   position: absolute;
@@ -116,10 +116,10 @@
   text-decoration: none !important;
   color: #fff;
   text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-  transition: color 0.2s ease;
+  transition: var(--link-transition-speed);
 }
 .accordion__link:hover {
-  color: #f58634;
+  color: var(--main-orange-color);
 }
 
 @media (max-width: 992px) {
@@ -132,8 +132,8 @@
     background-position: center;
     border-left: none;
     border-right: none;
-    border-top: 1px solid #f58634;
-    border-bottom: 1px solid #f58634;
+    border-top: 1px solid var(--main-orange-color);
+    border-bottom: 1px solid var(--main-orange-color);
   }
   .accordion__item:hover,
   .accordion__item.is-active {
@@ -157,7 +157,7 @@
 
 .index-videos {
   margin-top: -2em;
-  border-bottom: 3px solid #f58634;
+  border-bottom: 3px solid var(--main-orange-color);
 }
 
 /* GENERAL */
@@ -166,7 +166,7 @@
   font-size: 2em;
   text-align: center;
   text-transform: uppercase;
-  color: #f58634;
+  color: var(--main-orange-color);
   font-weight: 700;
   margin-bottom: 1em;
   position: relative;
@@ -191,13 +191,13 @@
   transform: translateX(-50%);
   margin: 0 auto 0 auto;
   padding: 0.5em 1em;
-  border: 1px solid #f58634;
-  color: #f58634;
+  border: 1px solid var(--main-orange-color);
+  color: var(--main-orange-color);
   font-weight: bold;
   text-decoration: none;
   text-transform: lowercase;
   background: transparent;
-  transition: all 0.4s ease;
+  transition: var(--button-transition-speed);
 }
 
 .primary-btn:hover,

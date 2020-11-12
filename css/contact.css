@@ -7,21 +7,7 @@
 }
 
 .contact-container {
-  display: flex;
-  width: 80%;
-  margin: 0 auto;
-  padding-top: 9em;
-}
-
-.about-container {
-  width: 100%;
-  height: 300px;
-  margin-right: 50px;
-}
-
-.form-container {
-  width: 100%;
-  height: 300px;
+  padding: 150px 15px;
 }
 
 .contact-btn {
@@ -70,7 +56,7 @@
 }
 
 .contact-info a {
-  color: #ff6a00;
+  color: var(--main-orange-color);
   text-decoration: none;
 }
 
@@ -105,16 +91,18 @@
   color: #f72a00;
 }
 
-@media only screen and (max-width: 768px) {
-  .contact-container {
+@media only screen and (max-width: 991px) {
+  .contact-container .row {
     flex-direction: column;
     align-items: center;
   }
-  .about-container {
-    height: auto;
-    margin-right: 0px;
+
+  .contact-container .row .col-6 {
+    max-width: 100%;
   }
   .form-container {
-    margin-top: 2em;
+    margin: auto;
+    padding-top: 50px;
+    max-width: 500px;
   }
 }

@@ -39,87 +39,99 @@
       </div>
     </div>
 
-    <!-- ABOUT US-->
     <div class="contact-container">
       <div class="container">
-        <div class="about-container">
-          <h2 class="contact-h2">
-            About us
-            <span>About us</span>
-          </h2>
-          <div class="about-us-text">
-            <p>
-              Takara hooks are high quality fishing hooks made in Japan by skilled workers with long
-              experience. We use only premium materials to develop hooks which are ideal for all
-              types of water, style or fish. In our range you can find competition hooks, freshwater
-              hooks, jig, worm, treble and much more to satisfy Your needs.
-            </p>
-            <p>
-              Takara trademark guaranties that every hook has passed quality control and it will not
-              fail You. Our moto is "Takara - when quality is what You need". Takara lines and
-              accessories are made to satisfy fishermens need for quality line and accessories.
-              There is no point in having good hooks when the line is not as good...
-            </p>
+        <div class="row">
+          <!-- ABOUT US-->
+          <div class="col-6">
+            <div class="about-container">
+              <h2 class="contact-h2">
+                About us
+                <span>About us</span>
+              </h2>
+              <div class="about-us-text">
+                <p>
+                  Takara hooks are high quality fishing hooks made in Japan by skilled workers with
+                  long experience. We use only premium materials to develop hooks which are ideal
+                  for all types of water, style or fish. In our range you can find competition
+                  hooks, freshwater hooks, jig, worm, treble and much more to satisfy Your needs.
+                </p>
+                <p>
+                  Takara trademark guaranties that every hook has passed quality control and it will
+                  not fail You. Our moto is "Takara - when quality is what You need". Takara lines
+                  and accessories are made to satisfy fishermens need for quality line and
+                  accessories. There is no point in having good hooks when the line is not as
+                  good...
+                </p>
+              </div>
+
+              <div class="contact-info">
+                <p id="contact-gepe">Distribution - GepeFishing</p>
+                <p><u>address:</u> Mladosti 17, 18000 Nis, Serbia</p>
+                <p><u>tel:</u> +38118580886 ; + 381638147859</p>
+                <p>
+                  <u>e-mail:</u>
+                  <a href="mailto:gepegroup@gmail.com" id="contact-mail"> gepegroup@gmail.com</a>
+                </p>
+                <a href="https://www.facebook.com/TakarahookSerbia"
+                  ><i class="fab fa-facebook-f social-icons"></i
+                ></a>
+                <a href="https://www.instagram.com/takarahooks/"
+                  ><i class="fab fa-instagram social-icons"></i
+                ></a>
+                <a href="https://www.youtube.com/channel/UCYNNmcgx6Qk6XFNPDaSC3cQ"
+                  ><i class="fab fa-youtube social-icons"></i
+                ></a>
+              </div>
+            </div>
           </div>
 
-          <div class="contact-info">
-            <p id="contact-gepe">Distribution - GepeFishing</p>
-            <p><u>address:</u> Mladosti 17, 18000 Nis, Serbia</p>
-            <p><u>tel:</u> +38118580886 ; + 381638147859</p>
-            <p>
-              <u>e-mail:</u>
-              <a href="mailto:gepegroup@gmail.com" id="contact-mail"> gepegroup@gmail.com</a>
-            </p>
-            <a href="https://www.facebook.com/TakarahookSerbia"
-              ><i class="fab fa-facebook-f social-icons"></i
-            ></a>
-            <a href="https://www.instagram.com/takarahooks/"
-              ><i class="fab fa-instagram social-icons"></i
-            ></a>
-            <a href="https://www.youtube.com/channel/UCYNNmcgx6Qk6XFNPDaSC3cQ"
-              ><i class="fab fa-youtube social-icons"></i
-            ></a>
+          <!-- CONTACT FORM -->
+          <div class="col-6">
+            <div class="form-container">
+              <h2 class="contact-h2">
+                Contact
+                <span>Contact</span>
+              </h2>
+
+              <!-- Name -->
+              <form action="contact.php" method="post">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="visitor_name"
+                  placeholder="Name"
+                  pattern="[A-Z\sa-z]{3,20}"
+                  required
+                />
+
+                <!-- Email -->
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="visitor_email"
+                  placeholder="Email address"
+                />
+
+                <!-- Text -->
+                <textarea
+                  name="visitor_message"
+                  class="form-control"
+                  id="message"
+                  placeholder="Your message"
+                  required
+                ></textarea>
+                <input
+                  type="submit"
+                  value="Send Message"
+                  class="primary-btn contact-btn"
+                  required
+                />
+              </form>
+            </div>
           </div>
-        </div>
-
-        <!-- CONTACT FORM -->
-        <div class="form-container">
-          <h2 class="contact-h2">
-            Contact
-            <span>Contact</span>
-          </h2>
-
-          <!-- Name -->
-          <form action="contact.php" method="post">
-            <input
-              type="text"
-              class="form-control"
-              id="name"
-              name="visitor_name"
-              placeholder="Name"
-              pattern="[A-Z\sa-z]{3,20}"
-              required
-            />
-
-            <!-- Email -->
-            <input
-              type="email"
-              class="form-control"
-              id="email"
-              name="visitor_email"
-              placeholder="Email address"
-            />
-
-            <!-- Text -->
-            <textarea
-              name="visitor_message"
-              class="form-control"
-              id="message"
-              placeholder="Your message"
-              required
-            ></textarea>
-            <input type="submit" value="Send Message" class="primary-btn contact-btn" required />
-          </form>
         </div>
       </div>
     </div>
