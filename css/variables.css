@@ -2,6 +2,8 @@
 :root {
   --main-orange-color: rgb(245, 134, 52);
 
+  --nav-footer-bg-color: rgba(0, 0, 0, 0.8);
+
   /* Transitions */
   --link-transition-speed: color 0.2s ease;
   --nav-transition-speed: transform 0.3s ease-in-out;

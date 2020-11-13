@@ -4,9 +4,20 @@
   font-family: "Marcellus", serif;
 }
 
+#hooks-body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
 .active-link {
   color: #f58634 !important;
   font-size: 1.2em !important;
+}
+
+.hooks-container {
+  flex: 1 0 auto;
+  padding-top: 80px;
 }
 
 img.zoom {
@@ -24,12 +35,6 @@ img.zoom {
   -moz-transform: scale(1.1);
   -o-transform: scale(1.1);
   transform: scale(1.1);
-}
-
-.hooks-container {
-  margin: 0 auto;
-  position: relative;
-  padding-top: 80px;
 }
 
 .thumb {
@@ -101,35 +106,4 @@ img.zoom {
 
 .zoom {
   height: initial !important;
-}
-
-/* HOOKS CONTEINER HEIGHT MQ */
-
-@media (min-width: 320px) {
-  .competition-container-height {
-    height: 80vh;
-  }
-}
-
-@media (min-width: 768px) {
-  .carp-container-height {
-    height: 80vh;
-  }
-  .catfish-container-height {
-    height: 80vh;
-  }
-}
-@media (min-width: 991px) {
-  .predator-container-height {
-    height: 80vh;
-  }
-  .snelled-container-height {
-    height: 80vh;
-  }
-}
-
-@media only screen and (max-width: 1199px) and (min-width: 992px) {
-  .hooks-container-height {
-    height: 80vh;
-  }
 }
