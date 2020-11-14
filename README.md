@@ -1,1 +1,1 @@
-Takara website.
+Live site -> https://takarars.netlify.app
