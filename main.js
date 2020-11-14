@@ -1,10 +1,8 @@
-let modalBg = document.getElementsByClassName("news-modal");
-let modal = document.getElementsByClassName("news-modal-box");
-let openBtn = document.getElementsByClassName("news-item");
-let closeBtn = document.getElementsByClassName("modal-close");
+let newsItem = document.querySelectorAll(".news-item");
+let newsModal = document.querySelectorAll(".news-modal");
+let modalClose = document.querySelectorAll(".modal-close");
 
 // Navigation
-
 $(".main-nav__toggler").click(function () {
   $(this).toggleClass("active-toggler");
   $(".main-nav__list").toggleClass("main-menu-active");
@@ -25,27 +23,25 @@ $(window).resize(function () {
   }
 });
 
-// Open modal
-for (let i = 0; i < openBtn.length; i++) {
-  openBtn[i].onclick = function () {
-    modalBg[i].style.display = "block";
-  };
-}
+// Open/Close modal
+newsItem.forEach((item) => {
+  item.addEventListener("click", function () {
+    let modal = item.closest(".col-md-4").childNodes[5];
+    modal.classList.add("modal-open");
+  });
+});
 
-// Close modal
-for (let i = 0; i < closeBtn.length; i++) {
-  closeBtn[i].onclick = function () {
-    modalBg[i].style.display = "none";
-  };
-}
+modalClose.forEach((btn) => {
+  btn.addEventListener("click", function () {
+    this.closest(".news-modal").classList.remove("modal-open");
+  });
+});
 
-// Close modal on outside click
-window.addEventListener("click", outsideClick);
-function outsideClick(e) {
-  if (e.target == modalBg) {
-    modalBg.style.display = "none";
-  }
-}
+newsModal.forEach((modal) => {
+  modal.addEventListener("click", function () {
+    this.classList.remove("modal-open");
+  });
+});
 
 // Image Fancybox
 $(document).ready(function () {

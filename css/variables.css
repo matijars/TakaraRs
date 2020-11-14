@@ -8,5 +8,7 @@
   --link-transition-speed: color 0.2s ease;
   --nav-transition-speed: transform 0.3s ease-in-out;
 
+  --hooks-img-hover-transition-speed: all 0.2s ease-in-out;
+
   --button-transition-speed: background 0.2s ease;
 }
