@@ -44,7 +44,7 @@ newsModal.forEach((modal) => {
 });
 
 // Image Fancybox
-$(document).ready(function () {
+function fancybox() {
   $(".fancybox").fancybox({
     openEffect: "none",
     closeEffect: "none",
@@ -58,7 +58,7 @@ $(document).ready(function () {
       $(this).removeClass("transition");
     }
   );
-});
+}
 
 // Fade arrow
 var arrowFade = $(".arrow");
@@ -71,7 +71,7 @@ $(window).on("scroll", function () {
 });
 
 // Slider
-$(document).ready(function () {
+function slider() {
   $(".customer-logos").slick({
     slidesToShow: 5,
     slidesToScroll: 1,
@@ -95,26 +95,4 @@ $(document).ready(function () {
       },
     ],
   });
-});
-
-// Video slider
-
-$(document).ready(function () {
-  $(".video-slide").slick({});
-});
-
-$(".slider-for").slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: false,
-  fade: true,
-  asNavFor: ".slider-nav",
-});
-$(".slider-nav").slick({
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  asNavFor: ".slider-for",
-  dots: true,
-  centerMode: true,
-  focusOnSelect: true,
-});
+}
