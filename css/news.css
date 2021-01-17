@@ -89,7 +89,6 @@
   font-size: 20px;
   color: var(--main-orange-color);
   font-weight: 900;
-  margin: 0.5em 0 0.8em 0;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -97,6 +96,7 @@
   max-height: 1.4;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
+  margin: 0;
 }
 
 .news-content p {
@@ -137,8 +137,11 @@
   }
 }
 
-.news .news-date {
-  margin-top: 5px;
+.news .news-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0px 20px 0px;
 }
 
 .news .news-date span {

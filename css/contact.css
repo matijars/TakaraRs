@@ -76,7 +76,7 @@
   color: rgb(65, 64, 64);
   font-size: 2em;
   margin: 0.2em 0.5em 0 0;
-  transition: 0.5s ease;
+  transition: var(--link-transition-speed);
 }
 
 .contact-info .fa-facebook-f:hover {
