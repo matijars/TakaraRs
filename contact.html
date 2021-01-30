@@ -19,6 +19,10 @@
     />
     <link href="https://fonts.googleapis.com/css?family=Marcellus&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png" />
   </head>
 
   <body id="catalog-body">
@@ -94,8 +98,19 @@
                 <span>Contact</span>
               </h2>
 
-              <!-- Name -->
-              <form action="contact.php" method="post">
+              <!-- Subject -->
+              <form action="contact.php" method="post" id="contact-form">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="subject"
+                  name="visitor_subject"
+                  placeholder="Subject"
+                  pattern="[A-Z\sa-z]{3,20}"
+                  required
+                />
+
+                <!-- Name -->
                 <input
                   type="text"
                   class="form-control"

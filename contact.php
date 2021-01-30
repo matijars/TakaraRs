@@ -4,6 +4,11 @@ if($_POST) {
     $visitor_name = "";
     $visitor_email = "";
     $visitor_message = "";
+    $visitor_subject = "";
+
+    if(isset($_POST['visitor_subject'])) {
+        $visitor_subject  = filter_var($_POST['visitor_subject'], FILTER_SANITIZE_STRING);
+    }
      
     if(isset($_POST['visitor_name'])) {
         $visitor_name = filter_var($_POST['visitor_name'], FILTER_SANITIZE_STRING);
@@ -22,10 +27,12 @@ if($_POST) {
      
     $headers  = 'MIME-Version: 1.0' . "\r\n"
     .'Content-type: text/html; charset=utf-8' . "\r\n"
-    .'From: ' . $visitor_email . "\r\n";
+    ."From: " . $visitor_name . "<". $visitor_email .">\r\n";
      
-    if(mail($recipient, $email_title, $visitor_message, $headers)) {
+    if(mail($recipient, $visitor_subject, $visitor_message, $headers)) {
         echo "<p>Thank you for contacting us, $visitor_name. You will get a reply within 24 hours.</p>";
+        echo "<input type='hidden' id='Redirect'>
+           Thanks, you will be redirected in 3 sec";
     } else {
         echo '<p>We are sorry but the email did not go through.</p>';
     }
