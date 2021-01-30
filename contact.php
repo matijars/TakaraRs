@@ -30,11 +30,9 @@ if($_POST) {
     ."From: " . $visitor_name . "<". $visitor_email .">\r\n";
      
     if(mail($recipient, $visitor_subject, $visitor_message, $headers)) {
-        echo "<p>Thank you for contacting us, $visitor_name. You will get a reply within 24 hours.</p>";
-        echo "<input type='hidden' id='Redirect'>
-           Thanks, you will be redirected in 3 sec";
+        echo "<script>document.location='contact.html'</script>";
     } else {
-        echo '<p>We are sorry but the email did not go through.</p>';
+        echo "<script>document.location='contact.html'</script>";
     }
      
 } else {

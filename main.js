@@ -96,3 +96,19 @@ function slider() {
     ],
   });
 }
+
+// Contact
+let contactBtn = document.querySelector('.contact-btn');
+
+
+contactBtn.addEventListener('click', function () {
+  let subject = document.querySelector('#subject').value;
+  let name = document.querySelector('#name').value;
+  let email = document.querySelector('#email').value;
+  let message = document.querySelector('#message').value;
+  if (subject && name && email && message != "" && email.includes('@')) {
+    toastr.success('Message Sent!');
+  } else {
+    toastr.error('Please enter required contact information!');
+  }
+})
